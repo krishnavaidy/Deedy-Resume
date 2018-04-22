@@ -1,0 +1,220 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Krishna}{Vaidyanathan}{
+\urlstyle{same}\href{https://www.linkedin.com/in/krishna-vaidyanathan-07663636/}{krishna.vaidyanathan}| \\
+\href{mailto:krishna.v.psg@outlook.com}{krishna.v.psg@outlook.com} | 226.978.2760
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Waterloo}
+\descript{M.Math in Computer Science}
+\location{Sep 2015 - Aug 2017 | Waterloo, ON, Canada}
+\sectionsep
+
+\subsection{PSG College of Technology}
+\descript{Integrated M.Sc. in Theoretial Computer Science}
+\location{June 2010 - Aug 2015 | Coimbatore, TN, India}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/krishnavaidy}{\bf krishnavaidy} \\
+LinkedIn://
+\href{https://www.linkedin.com/in/krishna-vaidyanathan-07663636/}{\bf krishna.vaidyanathan} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Experimental OS Techniques\\
+Design \& Analysis of Algorithms\\
+Trust Modeling \& Online Social Networks\\
+\sectionsep
+
+\subsection{Undergraduate}
+Machine Learning \\
+Operating Systems \\
+Parallel \& Distributed Computing \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+Python \textbullet{} Javascript \textbullet{} Shell \\
+C++ \textbullet{} Matlab \textbullet{} \LaTeX \\ 
+
+\subsection{Tools}
+React \textbullet{} neo4j \textbullet{} Docker\\
+Django \textbullet{} Flask
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{BenchSci}
+\descript{| Backend Engineer }
+\location{Sep 2017 - Present | Toronto, ON}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Managed a web crawler; parallelized the crawler leading to a 10X speed
+increase.
+\item Designed webpages using Django and React; helped decouple the frontend
+from the backend leading to increased code reusability.
+\item Writing queries to a graph database (Neo4j); increased the speed of
+queries by 5X.
+\item Interfacing with (and creating a few) RESTful APIs.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Amazon Development Center}
+\descript{| Software Development Engineer Intern }
+\location{Jan 2015 – July 2014 | Chennai, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed an internal tool to static analyze codebases by
+    generating a graph of dependencies and isolating sections of the
+    code that is affected by check-ins.
+\item Worked on Facebook's pfff tool and added features to enrichen the
+    graph generated by pfff.
+\item Ported graph from pfff to TitanDB, a graph database, and wrote
+    queries to derive insights from it.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Algorithms \& Complexity Lab, University of Waterloo}
+\descript{| Research Assistant}
+\location{Sep 2015 – Aug 2017 | Waterloo, ON} 
+Formulated problems in reconfiguration of colorings - specifically acyclic
+and equiable colorings - and developed algorithms and complexity results for the
+same.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publications} 
+\sectionsep
+\begin{tightemize}
+\item Tesshu Hanaka, Takehiro Ito, Haruka Mizuta, Benjamin Moore, Naomi
+Nishimura, Vijay Subramanya, Krishna Vaidyanathan. \textit{``Reconfiguring
+spanning and induced subgraphs".} arXiv preprint arXiv:1803.06074 (2018).
+\item Krishna Vaidyanathan. \textit{``Reconfiguring Graph Colorings".} MS thesis. University of Waterloo (2017).
+\item Robin Cohen, Alan Tsang, Krishna Vaidyanathan, Haotian Zhang. \textit{``Analyzing Opinion Dynamics in Online Social Networks".} BigDIA (Big Data and Information Analytics) (2016).
+\item Jasine  Babu,  L.  Sunil  Chandran, Krishna  Vaidyanathan.
+\textit{``Rainbow matchings in strongly edge-colored graphs".} Discrete Mathematics 338.7 (2015).
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rl}
+2017	     & Outstanding TA Award, University of Waterloo\\
+2015	     & Best All Rounder, PSG College of Technology\\
+\end{tabular}
+\sectionsep
+
+
+\end{minipage} 
+\end{document}  
