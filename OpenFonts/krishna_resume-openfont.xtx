@@ -84,12 +84,12 @@
 
 \subsection{University of Waterloo}
 \descript{M.Math in Computer Science}
-\location{Sep 2015 - Aug 2017 | Waterloo, ON, Canada}
+\location{Sep 2015 - Aug 2017 | Waterloo, Canada}
 \sectionsep
 
 \subsection{PSG College of Technology}
-\descript{Integrated M.Sc. in Theoretial Computer Science}
-\location{June 2010 - Aug 2015 | Coimbatore, TN, India}}
+\descript{Integrated M.Sc. in Theoretical Computer Science}
+\location{June 2010 - Aug 2015 | Coimbatore, India}}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -123,12 +123,17 @@ Parallel \& Distributed Computing \\
 
 \section{Skills}
 \subsection{Programming}
-Python \textbullet{} Javascript \textbullet{} Shell \\
+Python \textbullet{} Javascript \textbullet{} Shell \textbullet{} \\
 C++ \textbullet{} Matlab \textbullet{} \LaTeX \\ 
 
 \subsection{Tools}
-React \textbullet{} neo4j \textbullet{} Docker\\
-Django \textbullet{} Flask
+React \textbullet{} neo4j \textbullet{} Docker \textbullet{} \\
+Django \textbullet{} Flask \textbullet{} Airflow
+
+\subsection{Cloud}
+AWS \textbullet{} DigitalOcean \textbullet{} Azure \textbullet{} \\
+GCP 
+
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -148,21 +153,21 @@ Django \textbullet{} Flask
 \section{Experience}
 \runsubsection{BenchSci}
 \descript{| Backend Engineer }
-\location{Sep 2017 - Present | Toronto, ON}
+\location{Sep 2017 - Present | Toronto, Canada}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Managed a web crawler; parallelized the crawler leading to a 10X speed
 increase.
 \item Designed webpages using Django and React; helped decouple the frontend
 from the backend leading to increased code reusability.
-\item Writing queries to a graph database (Neo4j); increased the speed of
+\item Wrote queries to a graph database (neo4j); increased the speed of
 queries by 5X.
-\item Interfacing with (and creating a few) RESTful APIs.
+\item Interfaced with (and created a few) RESTful APIs.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Amazon Development Center}
-\descript{| Software Development Engineer Intern }
+\runsubsection{Amazon}
+\descript{| SDE Intern }
 \location{Jan 2015 – July 2014 | Chennai, India}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
@@ -183,7 +188,7 @@ queries by 5X.
 \section{Research}
 \runsubsection{Algorithms \& Complexity Lab, University of Waterloo}
 \descript{| Research Assistant}
-\location{Sep 2015 – Aug 2017 | Waterloo, ON} 
+\location{Sep 2015 – Aug 2017 | Waterloo, Canada} 
 Formulated problems in reconfiguration of colorings - specifically acyclic
 and equiable colorings - and developed algorithms and complexity results for the
 same.
