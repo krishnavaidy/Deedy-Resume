@@ -1,3 +1,8 @@
+Krishna-Resume
+
+This resume is a modification from: https://github.com/deedy/Deedy-Resume.
+My resume is [here](https://github.com/krishnavaidy/krishna-deedy-resume/blob/master/OpenFonts/krishna_resume-openfont.xtx).
+
 Deedy-Resume
 =========================
 
