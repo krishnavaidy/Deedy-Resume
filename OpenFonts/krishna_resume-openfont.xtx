@@ -1,4 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Deedy - One Page Two Column Resume
 % LaTeX Template
 % Version 1.2 (16/9/2014)
@@ -128,7 +127,7 @@ C++ \textbullet{} Matlab \textbullet{} \LaTeX \\
 
 \subsection{Tools}
 React \textbullet{} neo4j \textbullet{} Docker \textbullet{} \\
-Django \textbullet{} Flask \textbullet{} Airflow
+Django \textbullet{} Flask \textbullet{} Express
 
 \subsection{Cloud}
 AWS \textbullet{} DigitalOcean \textbullet{} Azure \textbullet{} \\
@@ -151,9 +150,22 @@ GCP
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
+\runsubsection{Coinsquare Mining}
+\descript{| Full Stack Developer}
+\location{May 2018 - Present | Toronto, Canada}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed and managed a bot written in Django and React to buy and monitor
+orders on \href{www.nicehash.com}{www.nicehash.com};  this lead to increased profitability. 
+\item Added merged-mining support to the open source library node-merged-pooler;
+this lead to a potential increase in profits at no additional cost.
+\end{tightemize}
+\sectionsep
+
+
 \runsubsection{BenchSci}
 \descript{| Backend Engineer }
-\location{Sep 2017 - Present | Toronto, Canada}
+\location{Sep 2017 - April 2018| Toronto, Canada}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Managed a web crawler; parallelized the crawler leading to a 10X speed
